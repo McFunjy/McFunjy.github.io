@@ -1,0 +1,265 @@
+body{
+    height: 2000px;
+    background: rgb(249, 251, 253);
+}
+header{
+    margin-top: -60px;
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    background: white;
+    z-index: 1;
+}
+.logo{
+height: 49px;
+width: 150px;
+float: left;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    margin-top: 10px; 
+    float: right;
+    width: 43px;
+    height: 49px;
+}
+.logo1{
+    margin-top: 7px;
+    height: 40px;
+    width: 130px;
+}
+.ярлыки{
+    width: 23px;
+    height: 23px;  
+}
+.ярлыки1{
+    margin-top: -5px;
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;  
+}
+.ярлыки2{
+    margin-top: -5px;
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;  
+}
+.head1{
+    margin-top: 15px;
+    float: right;
+    width: 43px;
+    height: 49px;
+}
+.head2{
+    width: 59px;
+    height: 49px;
+    margin-top: 15px;
+    float: left;
+}
+.head3{
+    width: 49px;
+    height: 49px;
+    margin-top: 15px;
+    float: left;
+}
+.head4{
+    width: 115px;
+    height: 49px;
+    margin-top: 15px;
+    float: left;
+}
+.head5{
+    width: 110px;
+    height: 49px;
+    margin-top: 15px;
+    float: left;
+}
+.head6{
+    width: 49px;
+    height: 49px;
+    margin-top: 15px;
+    float: left;
+}
+.carousel{
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 80%;
+    height: 600px;
+}
+.для{
+    text-align: center;
+    transition: 3s;
+    margin-top: 5%;
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-left: 2%;
+}
+.для1{
+    
+    width: 100%;
+    height: 100%;
+}
+.her{
+    position: relative;
+    margin-left: 10%;
+}
+.полу{
+    margin-top: -21.5%;
+    width: 100%;
+    height: 17%;
+    background: rgba(92, 189, 235, 0.7);
+    position: absolute;
+}
+.для:hover .полу {
+    transition: 0.4s;
+    margin-top: -126%;
+    height: 100%;
+    background: rgba(92, 189, 235, 0.7);
+  }
+  .her{
+    position: relative;
+}
+.полу1{
+    margin-top: -4.5%;
+    width: 20%;
+    height: 9%;
+    background: rgba(92, 189, 235, 0.7);
+    position: absolute;
+}
+.для:hover .полу1 {
+    transition: 0.4s;
+    margin-top: -25.3%;
+    height: 50.6%;
+    background: rgba(92, 189, 235, 0.7);
+  }
+  .email{
+      margin-left: 2%;
+      margin-top: 5%;
+      width: 36%;
+      height: 80%;
+  }
+  .email1{
+      height: 25%;
+  }
+  .some{
+      width: 80%;
+      margin-left: 10%;
+      height: 100%;
+  }
+  .текст1{
+      margin-top: 2%;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+  footer{
+      margin-top: 3%;
+      background: white;
+      width: 100%;
+      height: 450px;
+  }
+  .line{
+      width: 100%;
+      height: 0.6px;
+      border: solid 2px rgb(92, 189, 235);
+  }
+  .conect{
+      margin-top: 2%;
+      margin-left: 12%;
+      width: 76%;
+      height: 30%;
+  }
+  .связвться{
+    float: left;
+      text-align: left;
+      height: 100%;
+      width: 26%;
+  }
+  .или{
+    float: left;
+    height: 100%;
+      width: 19%;
+      margin-left: 4%;
+  }
+  .form{ 
+      margin-top: 7%;
+      height: 30%;
+      width: 100%;
+      border: solid 1px black;
+      text-align: center;
+  }
+  .или:hover .form {
+    color: white;
+    background: black;
+  }
+ .новостная{
+     float: left;
+     height: 100%;
+     width: 25%;
+     margin-left: 4%;
+ }
+ .почта{
+     margin-top: 3%;
+ }
+ .узнать{
+     float: left;
+     height: 100%;
+     width: 19%;
+     margin-left: 3%;
+ }
+ .line2{
+     margin-top: 1%;
+     margin-left: 12%;
+     width: 76%;
+     height: 0.3%;
+     border: solid 0.5px rgb(216, 215, 215);
+ }
+ .mnogo{
+     margin-top: 2%;
+    margin-left: 12%;
+     width: 76%;
+     height: 35%; 
+ }
+ .гид{
+     height: 100%;
+     width: 14%;
+     float: left;
+ }
+ .интернет{
+    margin-left: 3.5%;
+    height: 100%;
+    width: 13%;
+    float: left;
+ }
+ .правила{
+    margin-left: 3.5%;
+    height: 100%;
+    width: 30%;
+    float: left; 
+ }
+ .правовые{
+    margin-left: 3.5%;
+    height: 100%;
+    width: 13%;
+    float: left; 
+ }
+ .контакты{
+    margin-left: 3.5%; 
+    float: left;
+ }
+ .карьера{
+    margin-left: 3.5%; 
+    float: left;
+ }
+ .up{
+     margin-top: -3%;
+ }
+ .up1{
+    margin-top: -1%;
+}
+.firma{
+    margin-top: 1%;
+    margin-left: 12%;
+}
