@@ -1,0 +1,48 @@
+﻿  test.cpp
+D:\Game tast\Game Alfa\test.cpp(13,27): warning C4305: инициализация: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(26,42): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+D:\Game tast\Game Alfa\test.cpp(26,39): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+D:\Game tast\Game Alfa\test.cpp(53,15): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(54,16): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(66,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(78,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(89,15): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(90,16): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(101,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(111,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(130,1): warning C4305: =: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(161,42): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+D:\Game tast\Game Alfa\test.cpp(161,39): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+D:\Game tast\Game Alfa\test.cpp(167,1): warning C4305: =: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(168,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(174,1): warning C4305: =: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(175,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(181,1): warning C4305: =: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(182,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(189,1): warning C4305: =: усечение из "double" в "float"
+D:\Game tast\Game Alfa\test.cpp(190,1): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(223,14): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(224,15): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(234,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(242,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(334,15): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(335,17): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(368,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Game tast\Game Alfa\test.cpp(368,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Game Alfa.vcxproj -> D:\Game tast\Game Alfa\Debug\Game Alfa.exe
