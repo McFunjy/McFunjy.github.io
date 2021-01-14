@@ -116,6 +116,12 @@ const mutations = {
   setUsers(state, payload) {
     state.users = payload;
   },
+  DateSort(state){
+    state.records.sort(function( a, b ){
+      var dateA = new Date(a.date), dateB = new Date(b.date)
+      return dateB-dateA
+    })
+  }
 };
 const actions = {
   async emitTrackingStateChange({}, { room, tracking_state }) {
@@ -231,7 +237,16 @@ const actions = {
   async loadRooms({ commit, state }) {
     try {
       commit("switchLoading");
-      let res = await getRooms(state.jwt.token);
+      // let res = await getRooms(state.jwt.token);
+      let res = {data:
+        [{"name":"520","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"1","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+        {"name":"504","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"12","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+        {"name":"505","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"2","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+        {"name":"307","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"43","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+        {"name":"306","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"5","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+        {"name":"305","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"3","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "ips":"172.18.212.17"},
+      ]
+      }
       commit("setRooms", res.data);
     } catch (error) {
       commit("setError", error);
@@ -382,13 +397,23 @@ const actions = {
   async loadRecords({ commit, state }) {
     try {
       commit("switchLoading");
-      let res = await getRecords(state.user.email, state.jwt.token);
+      // let res = await getRecords(state.user.email, state.jwt.token);
+      let res = {data:
+        [{"date":"2020-05-12","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"Матан","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"1020-09-04"+"13:00"},
+        {"date":"2020-09-04","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"Матан","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"2020-09-04"+"13:00"},
+        {"date":"2020-08-02","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"АиП","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"2020-09-04"+"13:00"},
+        {"date":"2020-09-30","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"ТЭЦ","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"2020-09-04"+"13:00"},
+        {"date":"2020-11-09","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"ОТС","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"2020-09-04"+"13:00"},
+        {"date":"2020-11-12","done":true,"drive_file_url":"https://drive.google.com/file/d/1QoCbVyyAIu-_oIHr8jBr4Org_FQmJX8h/preview","end_time":"14:20","event_id":"02j3pfnmg3cut70t7rrcsdhrhk","event_name":"ТЭЦ","id":203,"processing":false,"room_name":"305","start_time":"13:00","user_email":"dakudryavtsev@miem.hse.ru", "date_time":"2020-09-04"+"13:00"},
+      ]
+      }
       commit("setRecords", res.data);
     } catch (error) {
       commit("setError", error);
     } finally {
       commit("switchLoading");
     }
+    commit("DateSort");
   },
   async getKey({ commit, state }) {
     try {
@@ -401,7 +426,8 @@ const actions = {
 };
 const getters = {
   isAutheticated(state) {
-    return isValidToken(state.jwt.token);
+    // return isValidToken(state.jwt.token);
+    return true;
   },
   user(state) {
     return state.user;
